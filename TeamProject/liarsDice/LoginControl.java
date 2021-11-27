@@ -45,8 +45,8 @@ public class LoginControl implements ActionListener {
 			System.out.println("Send to server"); //try-catch for IOException
 			
 			//When correct username and password is retrieved proceed to game panel
-			//CardLayout cardLayout = (CardLayout) container.getLayout();
-			//cardLayout.show(container, "3");
+			CardLayout cardLayout = (CardLayout) container.getLayout();
+			cardLayout.show(container, "3");
 		}
 	}
 	// Method that displays a message in the error 
