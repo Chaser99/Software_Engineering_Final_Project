@@ -9,10 +9,10 @@ import javax.swing.JPanel;
 public class LoginControl implements ActionListener {
 	// Private data fields for the container and chat client.
 	private JPanel container;
-	private Object client; //placeholder client object for now
+	private Client client;
 
 	// Constructor for the login controller.
-	public LoginControl(JPanel container, Object client) {
+	public LoginControl(JPanel container, Client client) {
 		this.container = container;
 		this.client = client;
 	}
@@ -41,8 +41,13 @@ public class LoginControl implements ActionListener {
 
 			// Submit the login information to the server.
 			
-			// ((Object) client).sendToServer(data);
-			System.out.println("Send to server"); //try-catch for IOException
+			try {
+				client.dataToServer(data);
+			} catch (IOException ex) {
+				// TODO Auto-generated catch block
+				ex.printStackTrace();
+			} //try-catch for IOException
+			
 			
 			//When correct username and password is retrieved proceed to game panel
 			CardLayout cardLayout = (CardLayout) container.getLayout();

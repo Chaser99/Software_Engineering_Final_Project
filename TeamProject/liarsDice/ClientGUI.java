@@ -6,22 +6,24 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class ClientGUI extends JFrame {
-
+	private Client client;
+	
 	public ClientGUI() {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		CardLayout cardLayout = new CardLayout();
 		JPanel container = new JPanel(cardLayout);
-
+		client = new Client("localhost", 22222);
+		
 		InitialControl ic = new InitialControl(container);
-		LoginControl lc = new LoginControl(container, "client object goes here");
-
+		LoginControl lc = new LoginControl(container, client);
+		
 		JPanel view1 = new InitialPanel(ic);
 		JPanel view2 = new LoginPanel(lc);
-		//JPanel view3 = new GameScreenPanel(ic);
+		JPanel view3 = new GameScreenPanel();
 		
 		container.add(view1, "1");
 		container.add(view2, "2");
-		//container.add(view3, "3");
+		container.add(view3, "3");
 		
 		cardLayout.show(container, "1");
 		// Add the card layout container to the JFrame.
