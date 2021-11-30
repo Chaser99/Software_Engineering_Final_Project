@@ -1,7 +1,6 @@
 package liarsDice;
 
 import java.io.IOException;
-
 import ocsf.server.AbstractServer;
 import ocsf.server.ConnectionToClient;
 
@@ -26,9 +25,5 @@ public class Server extends AbstractServer {
 		// TODO Auto-generated method stub
 		System.out.println("Message from Client " + arg1.getId() + ": " + arg0);
 	}
-	
-//	public void declareWinner() {
-//		System.out.println("Player # wins");
-//	}
 	
 }
