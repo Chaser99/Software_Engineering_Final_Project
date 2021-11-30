@@ -1,7 +1,6 @@
 package liarsDice;
 
 import java.io.IOException;
-
 import ocsf.client.AbstractClient;
 
 public class Client extends AbstractClient {

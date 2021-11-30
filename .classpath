@@ -6,11 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Reskr/OneDrive/Documents/eclipse workspace/OS Project 2/mysql-connector-java-5.1.40-bin.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Reskr/git/repos/Software_Engineering_Final_Project/TeamProject/ocsf.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
