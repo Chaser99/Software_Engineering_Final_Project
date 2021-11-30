@@ -83,11 +83,133 @@ public class GameScreenPanel extends JPanel {
 				// TODO Auto-generated method stub
 				betplaced = betField.getText();
 				//System.out.println(betplaced);
-				for(Dice dice : diceArray)
-				{
-					//some code
-					
-				}
+				
+				//get total number of each dice's face value
+					if(dice1.getText().equals("1"))
+					{
+						total1die++;
+					}
+					else if(dice1.getText().equals("2"))
+					{
+						total2die++;
+					} 
+					else if(dice1.getText().equals("3"))
+					{
+						total3die++;
+					}
+					else if(dice1.getText().equals("4"))
+					{
+						total4die++;
+					}
+					else if(dice1.getText().equals("5"))
+					{
+						total5die++;
+					}
+					else if(dice1.getText().equals("6"))
+					{
+						total6die++;
+					}
+					//dice 2
+					if(dice2.getText().equals("1"))
+					{
+						total1die++;
+					}
+					else if(dice2.getText().equals("2"))
+					{
+						total2die++;
+					} 
+					else if(dice2.getText().equals("3"))
+					{
+						total3die++;
+					}
+					else if(dice2.getText().equals("4"))
+					{
+						total4die++;
+					}
+					else if(dice2.getText().equals("5"))
+					{
+						total5die++;
+					}
+					else if(dice2.getText().equals("6"))
+					{
+						total6die++;
+					}
+					//dice 3
+					if(dice3.getText().equals("1"))
+					{
+						total1die++;
+					}
+					else if(dice3.getText().equals("2"))
+					{
+						total2die++;
+					} 
+					else if(dice3.getText().equals("3"))
+					{
+						total3die++;
+					}
+					else if(dice3.getText().equals("4"))
+					{
+						total4die++;
+					}
+					else if(dice3.getText().equals("5"))
+					{
+						total5die++;
+					}
+					else if(dice3.getText().equals("6"))
+					{
+						total6die++;
+					}
+					//dice 4
+					if(dice4.getText().equals("1"))
+					{
+						total1die++;
+					}
+					else if(dice4.getText().equals("2"))
+					{
+						total2die++;
+					} 
+					else if(dice4.getText().equals("3"))
+					{
+						total3die++;
+					}
+					else if(dice4.getText().equals("4"))
+					{
+						total4die++;
+					}
+					else if(dice4.getText().equals("5"))
+					{
+						total5die++;
+					}
+					else if(dice4.getText().equals("6"))
+					{
+						total6die++;
+					}
+					//dice 5
+					if(dice5.getText().equals("1"))
+					{
+						total1die++;
+					}
+					else if(dice5.getText().equals("2"))
+					{
+						total2die++;
+					} 
+					else if(dice5.getText().equals("3"))
+					{
+						total3die++;
+					}
+					else if(dice5.getText().equals("4"))
+					{
+						total4die++;
+					}
+					else if(dice5.getText().equals("5"))
+					{
+						total5die++;
+					}
+					else if(dice5.getText().equals("6"))
+					{
+						total6die++;
+					}
+				
 				
 				
 				
