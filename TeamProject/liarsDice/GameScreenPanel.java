@@ -1,6 +1,7 @@
 package liarsDice;
 
 import java.awt.GridLayout;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -8,6 +9,7 @@ import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class GameScreenPanel extends JPanel {
@@ -36,6 +38,8 @@ public class GameScreenPanel extends JPanel {
 		JLabel points = new JLabel("Points: ", JLabel.CENTER);
 		JPanel dicePanel = new JPanel(new GridLayout(1, 5, 5, 5));
 		JPanel bettingPanel = new JPanel();
+		JPanel betsMadePanel = new JPanel();
+		JTextArea bets = new JTextArea();
 		
 		pointsPanel.add(points);
 		dicePanel.add(dice1);
@@ -52,7 +56,11 @@ public class GameScreenPanel extends JPanel {
 		JButton roll = new JButton("Roll");
 		JButton challenge = new JButton("Challenge Bid");
 		JButton bet = new JButton("Bet");
-
+		
+		betsMadePanel.add(new JLabel("Bets Made: "));
+		
+		
+		
 		roll.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -71,7 +79,10 @@ public class GameScreenPanel extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				Bet(betField);
+				String betplaced = betField.getText();
+				bets.append(betplaced);
+				bets.append("--");
+				
 			}
 		});
 
@@ -79,11 +90,13 @@ public class GameScreenPanel extends JPanel {
 		buttonPanel.add(challenge);
 		buttonPanel.add(bet);
 
-		JPanel grid = new JPanel(new GridLayout(4, 1, 0, 10));
+		JPanel grid = new JPanel(new GridLayout(6, 1, 0, 10));
 		grid.add(pointsPanel);
 		grid.add(dicePanel);
 		grid.add(bettingPanel);
 		grid.add(buttonPanel);
+		grid.add(betsMadePanel);
+		grid.add(bets);
 		this.add(grid);
 	}
 

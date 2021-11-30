@@ -3,12 +3,16 @@ package liarsDice;
 import java.io.IOException;
 import ocsf.client.AbstractClient;
 
-public class Client extends AbstractClient {
-	public Client(String host, int port) {
+
+public class Client extends AbstractClient 
+{
+	public Client(String host, int port) 
+	{
 		super(host, port);
 	}
 
-	public void dataToServer(Object arg0) throws IOException {
+	public void dataToServer(Object arg0) throws IOException 
+	{
 		sendToServer(arg0); 
 	}
 
