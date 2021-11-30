@@ -2,17 +2,26 @@ package liarsDice;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import java.io.IOException;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class ClientGUI extends JFrame {
 	private Client client;
 	
-	public ClientGUI() {
+	public ClientGUI(String host, int port) {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		CardLayout cardLayout = new CardLayout();
 		JPanel container = new JPanel(cardLayout);
-		client = new Client("localhost", 22222);
+		client = new Client(host, port);
+		
+		try {
+			client.openConnection();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		InitialControl ic = new InitialControl(container);
 		LoginControl lc = new LoginControl(container, client);
@@ -36,7 +45,7 @@ public class ClientGUI extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		new ClientGUI();
+		new ClientGUI(args[0], Integer.parseInt(args[1]));
 	}
 
 }
