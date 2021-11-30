@@ -36,6 +36,8 @@ public class Player {
 	public int getPoints() {
 		return points;
 	}
+	
+	
 
 //	public void addPoints(int quantity) {
 //		for(Dice dice: player_dice) {
