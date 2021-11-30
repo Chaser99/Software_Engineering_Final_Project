@@ -220,11 +220,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger loses challenge and the other player gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
-						
-						updatepoints = new JLabel(tPoints);
-						//pointsPanel.add(updatepoints);
-						System.out.println(tPoints);
-						
+						updatepoints.setText("Points: "+tPoints);
 						
 						
 						
@@ -234,6 +230,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger wins challenge and challenger gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 					}
 				}
@@ -244,10 +241,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger loses challenge and the other player gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
-						
-						updatepoints = new JLabel(tPoints);
-						//pointsPanel.add(updatepoints);
-						System.out.println(tPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 						
 						
@@ -258,6 +252,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger wins challenge and challenger gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 					}
 				}
@@ -268,10 +263,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger loses challenge and the other player gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
-						
-						updatepoints = new JLabel(tPoints);
-						//pointsPanel.add(updatepoints);
-						System.out.println(tPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 						
 					}
@@ -280,6 +272,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger wins challenge and challenger gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 					}
 				}
@@ -290,10 +283,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger loses challenge and the other player gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
-						
-						updatepoints = new JLabel(tPoints);
-						//pointsPanel.add(updatepoints);
-						System.out.println(tPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 						
 					}
@@ -302,6 +292,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger wins challenge and challenger gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 					}
 				}
@@ -312,10 +303,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger loses challenge and the other player gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
-						
-						updatepoints = new JLabel(tPoints);
-						//pointsPanel.add(updatepoints);
-						System.out.println(tPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 						
 					}
@@ -324,6 +312,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger wins challenge and challenger gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 					}
 				}
@@ -334,10 +323,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger loses challenge and the other player gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
-						
-						updatepoints = new JLabel(tPoints);
-						//pointsPanel.add(updatepoints);
-						System.out.println(tPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 						
 					}
@@ -346,6 +332,7 @@ public class GameScreenPanel extends JPanel {
 						//challenger wins challenge and challenger gets a point
 						totalPoints++;
 						String tPoints = Integer.toString(totalPoints);
+						updatepoints.setText("Points: "+tPoints);
 						
 					}
 				}
@@ -370,13 +357,14 @@ public class GameScreenPanel extends JPanel {
 		buttonPanel.add(challenge);
 		buttonPanel.add(bet);
 
-		JPanel grid = new JPanel(new GridLayout(6, 1, 0, 10));
+		JPanel grid = new JPanel(new GridLayout(7, 1, 0, 10));
 		grid.add(pointsPanel);
 		grid.add(dicePanel);
 		grid.add(bettingPanel);
 		grid.add(buttonPanel);
 		grid.add(betsMadePanel);
 		grid.add(bets);
+		grid.add(updatepoints);
 		this.add(grid);
 	}
 
