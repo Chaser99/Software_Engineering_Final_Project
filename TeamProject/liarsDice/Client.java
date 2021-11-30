@@ -10,7 +10,7 @@ public class Client extends AbstractClient {
 	}
 
 	public void dataToServer(Object arg0) throws IOException {
-		sendToServer(arg0);
+		sendToServer(arg0); 
 	}
 
 	public void connectionException(Exception exception) {
