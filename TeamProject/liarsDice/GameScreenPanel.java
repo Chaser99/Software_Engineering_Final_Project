@@ -82,16 +82,16 @@ public class GameScreenPanel extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				betplaced = betField.getText();
-				System.out.println(betField.getText());
-				//for(Dice dice : diceArray)
-			//	{
+				//System.out.println(betplaced);
+				for(Dice dice : diceArray)
+				{
 					//some code
 					
-				//}
+				}
 				
-				//total1die = 1;
 				
-				if (betplaced == "1")
+				
+				if (betplaced.equals("1"))
 				{
 					if(total1die == 1)
 					{
@@ -104,6 +104,8 @@ public class GameScreenPanel extends JPanel {
 						System.out.println(tPoints);
 						
 						
+						
+						
 					}
 					else
 					{
@@ -113,7 +115,7 @@ public class GameScreenPanel extends JPanel {
 						
 					}
 				}
-				else if (betplaced == "2")
+				else if (betplaced.equals("2"))
 				{
 					if(total2die == 2)
 					{
@@ -126,6 +128,8 @@ public class GameScreenPanel extends JPanel {
 						System.out.println(tPoints);
 						
 						
+						
+						
 					}
 					else
 					{
@@ -135,7 +139,7 @@ public class GameScreenPanel extends JPanel {
 						
 					}
 				}
-				else if (betplaced == "3")
+				else if (betplaced.equals("3"))
 				{
 					if(total3die == 3)
 					{
@@ -157,7 +161,7 @@ public class GameScreenPanel extends JPanel {
 						
 					}
 				}
-				else if (betplaced == "4")
+				else if (betplaced.equals("4"))
 				{
 					if(total4die == 4)
 					{
@@ -179,7 +183,7 @@ public class GameScreenPanel extends JPanel {
 						
 					}
 				}
-				else if (betplaced == "5")
+				else if (betplaced.equals("5"))
 				{
 					if(total5die == 5)
 					{
@@ -201,7 +205,7 @@ public class GameScreenPanel extends JPanel {
 						
 					}
 				}
-				else if (betplaced == "6")
+				else if (betplaced.equals("6"))
 				{
 					if(total6die == 6)
 					{
